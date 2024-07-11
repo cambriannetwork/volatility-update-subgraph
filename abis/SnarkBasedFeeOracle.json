@@ -1,0 +1,257 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      { "name": "_programKey", "type": "bytes32", "internalType": "bytes32" }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "VERSION",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "string", "internalType": "string" }],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "Verify",
+    "inputs": [
+      { "name": "proof", "type": "bytes", "internalType": "bytes" },
+      {
+        "name": "public_inputs",
+        "type": "uint256[]",
+        "internalType": "uint256[]"
+      }
+    ],
+    "outputs": [{ "name": "success", "type": "bool", "internalType": "bool" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "fraction_bits",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getPrice",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getVolatility",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "hashPublicValues",
+    "inputs": [
+      { "name": "publicValues", "type": "bytes", "internalType": "bytes" }
+    ],
+    "outputs": [{ "name": "", "type": "bytes32", "internalType": "bytes32" }],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "ln_1_0001",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "n1_check",
+    "inputs": [
+      { "name": "n_bytes", "type": "bytes8", "internalType": "bytes8" },
+      { "name": "n1_inv", "type": "bytes8", "internalType": "bytes8" }
+    ],
+    "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "n_sqrt_test",
+    "inputs": [
+      { "name": "n_inv_sqrt", "type": "bytes8", "internalType": "bytes8" },
+      { "name": "n_bytes", "type": "bytes8", "internalType": "bytes8" }
+    ],
+    "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "owner",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "address", "internalType": "address" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "price",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "programKey",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "bytes32", "internalType": "bytes32" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "renounceOwnership",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "rv",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "s",
+    "inputs": [],
+    "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "s2_check",
+    "inputs": [
+      { "name": "claimed_s", "type": "uint256", "internalType": "uint256" },
+      { "name": "new_s2", "type": "bytes8", "internalType": "bytes8" }
+    ],
+    "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+    "stateMutability": "pure"
+  },
+  {
+    "type": "function",
+    "name": "setPrice",
+    "inputs": [
+      { "name": "_price", "type": "uint256", "internalType": "uint256" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setProgramKey",
+    "inputs": [
+      { "name": "_programKey", "type": "bytes32", "internalType": "bytes32" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setVolatility",
+    "inputs": [{ "name": "_rv", "type": "uint256", "internalType": "uint256" }],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "transferOwnership",
+    "inputs": [
+      { "name": "newOwner", "type": "address", "internalType": "address" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "verifyAndUpdate",
+    "inputs": [
+      { "name": "claimed_s", "type": "uint256", "internalType": "uint256" },
+      { "name": "proof", "type": "bytes", "internalType": "bytes" },
+      { "name": "publicValues", "type": "bytes", "internalType": "bytes" }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "verifyProof",
+    "inputs": [
+      { "name": "vkey", "type": "bytes32", "internalType": "bytes32" },
+      { "name": "publicValues", "type": "bytes", "internalType": "bytes" },
+      { "name": "proofBytes", "type": "bytes", "internalType": "bytes" }
+    ],
+    "outputs": [],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "verifyRvProof",
+    "inputs": [
+      { "name": "proof", "type": "bytes", "internalType": "bytes" },
+      { "name": "publicValues", "type": "bytes", "internalType": "bytes" }
+    ],
+    "outputs": [
+      { "name": "", "type": "bytes8", "internalType": "bytes8" },
+      { "name": "", "type": "bytes8", "internalType": "bytes8" },
+      { "name": "", "type": "bytes8", "internalType": "bytes8" },
+      { "name": "", "type": "bytes8", "internalType": "bytes8" },
+      { "name": "", "type": "bytes32", "internalType": "bytes32" }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "event",
+    "name": "OwnershipTransferred",
+    "inputs": [
+      {
+        "name": "previousOwner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newOwner",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "VolatilityUpdated",
+    "inputs": [
+      {
+        "name": "newRv",
+        "type": "uint256",
+        "indexed": false,
+        "internalType": "uint256"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "OwnableInvalidOwner",
+    "inputs": [
+      { "name": "owner", "type": "address", "internalType": "address" }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "OwnableUnauthorizedAccount",
+    "inputs": [
+      { "name": "account", "type": "address", "internalType": "address" }
+    ]
+  }
+]

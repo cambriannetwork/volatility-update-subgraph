@@ -1,0 +1,6 @@
+type VolatilityUpdated @entity(immutable: true) {
+  id: Bytes!
+  newRv: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+}
