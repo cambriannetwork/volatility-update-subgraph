@@ -1,0 +1,8 @@
+{
+  "arbitrum-sepolia": {
+    "SnarkBasedFeeOracle": {
+      "address": "0x3117f7f9f452b047abb4fb39268a5ab21ed4cbaa",
+      "startBlock": 6233584
+    }
+  }
+}
