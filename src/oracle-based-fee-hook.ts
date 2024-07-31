@@ -4,7 +4,7 @@ import {
   import { FeeUpdated } from "../generated/schema"
   
   
-  export function handleVolatilityUpdated(event: FeeUpdateEvent): void {
+  export function handleFeeUpdate(event: FeeUpdateEvent): void {
     let entity = new FeeUpdated(
       event.transaction.hash.concatI32(event.logIndex.toI32())  )
   
