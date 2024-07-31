@@ -4,3 +4,12 @@ type VolatilityUpdated @entity(immutable: true) {
   blockNumber: BigInt!
   blockTimestamp: BigInt!
 }
+
+
+type FeeUpdated @entity(immutable: true) {
+  id: Bytes!
+  fee: BigInt! # uint256
+  blockTimestamp: BigInt!
+}
+
+
