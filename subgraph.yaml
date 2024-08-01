@@ -6,9 +6,9 @@ dataSources:
     name: SnarkBasedFeeOracle
     network: sepolia
     source:
-      address: "0x3117F7F9F452B047ABB4Fb39268a5AB21ed4cbAa"
+      address: "0xa120424BdC490002F0B949e2BB461302547e6769"
       abi: SnarkBasedFeeOracle
-      startBlock: 6233584
+      startBlock: 6285433
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -22,3 +22,24 @@ dataSources:
         - event: VolatilityUpdated(uint256)
           handler: handleVolatilityUpdated
       file: ./src/snark-based-fee-oracle.ts
+
+  - kind: ethereum
+    name: OracleBasedFeeHook
+    network: sepolia
+    source:
+      address: "0x01acEbd7a1117b3D52C6089D9df296F323D12080" 
+      abi: OracleBasedFeeHook
+      startBlock: 6285433  
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - FeeUpdate
+      abis:
+        - name: OracleBasedFeeHook
+          file: ./abis/OracleBasedFeeHook.json  # Ensure you have this ABI file
+      eventHandlers:
+        - event: FeeUpdate(indexed uint256,uint256)
+          handler: handleFeeUpdate
+      file: ./src/oracle-based-fee-hook.ts
