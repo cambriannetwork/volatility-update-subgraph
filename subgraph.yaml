@@ -27,7 +27,7 @@ dataSources:
     name: OracleBasedFeeHook
     network: sepolia
     source:
-      address: "0x01acEbd7a1117b3D52C6089D9df296F323D12080" 
+      address: "0xB7d34aa3AF1BE6Be2Adf1af3E4e179867cf9e080" 
       abi: OracleBasedFeeHook
       startBlock: 6285433  
     mapping:
